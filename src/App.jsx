@@ -45,7 +45,7 @@ function App() {
         <h1>Vocabulary-first RL learning exercises, from Chapter 1 to frontiers.</h1>
         <p>Move through the exact progression you prefer: <b>Vocabulary</b> → <b>Definition</b> → <b>Intuition</b> → <b>Connections</b> → <b>Analogy</b> → practical use-case drills.</p>
         <div className="heroGrid">
-          {['17 chapters','140+ vocabulary hooks','85+ practice prompts','Trading • Product • Habits • Agents'].map(item => <div className="metric" key={item}>{item}</div>)}
+          {['17 chapters','130+ vocabulary hooks','85+ practice prompts','Trading • Product • Habits • Agents'].map(item => <div className="metric" key={item}>{item}</div>)}
         </div>
       </section>
 
