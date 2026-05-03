@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { BookOpen, Brain, GitBranch, Layers3, Lightbulb, Target, Workflow, Zap } from 'lucide-react';
+import { BookOpen, Brain, ChevronLeft, ChevronRight, GitBranch, Layers3, Lightbulb, Target, Workflow, Zap } from 'lucide-react';
 import chapters from './data/chapters.json';
 
 const modes = [
@@ -25,14 +25,43 @@ function App() {
     );
   }, [query]);
 
+  const modeIndex = modes.findIndex(mode => mode.id === activeMode);
+  const chapterIndex = chapters.findIndex(chapter => chapter.number === selectedChapter.number);
+  const nextMode = modes[Math.min(modeIndex + 1, modes.length - 1)]?.id;
+
   function chooseChapter(chapter) {
     setSelectedChapter(chapter);
     setPracticePrompt(chapter.exercises[0]);
   }
 
+  function selectChapterByNumber(number) {
+    const chapter = chapters.find(item => item.number === Number(number));
+    if (chapter) chooseChapter(chapter);
+  }
+
   function randomPrompt() {
     const pool = selectedChapter.exercises;
     setPracticePrompt(pool[Math.floor(Math.random() * pool.length)]);
+  }
+
+  function advanceLearning() {
+    if (modeIndex < modes.length - 1) {
+      setActiveMode(modes[modeIndex + 1].id);
+      return;
+    }
+    const nextChapter = chapters[Math.min(chapterIndex + 1, chapters.length - 1)];
+    chooseChapter(nextChapter);
+    setActiveMode('Vocabulary');
+  }
+
+  function retreatLearning() {
+    if (modeIndex > 0) {
+      setActiveMode(modes[modeIndex - 1].id);
+      return;
+    }
+    const previousChapter = chapters[Math.max(chapterIndex - 1, 0)];
+    chooseChapter(previousChapter);
+    setActiveMode('Practice Lab');
   }
 
   const masteryQuestion = selectedChapter.masteryQuestion;
@@ -58,6 +87,20 @@ function App() {
         })}
       </section>
 
+      <section className="mobileStudyBar" aria-label="Mobile study controls">
+        <label className="mobileChapterSelect">Chapter
+          <select value={selectedChapter.number} onChange={event => selectChapterByNumber(event.target.value)}>
+            {chapters.map(chapter => <option key={chapter.number} value={chapter.number}>Ch {chapter.number}: {chapter.title}</option>)}
+          </select>
+        </label>
+        <div className="mobileProgress"><span>Step {modeIndex + 1}/6</span><b>{activeMode}</b></div>
+        <div className="mobileModes" role="tablist" aria-label="Learning steps">
+          {modes.map((mode, index) => <button key={mode.id} className={activeMode === mode.id ? 'mobileMode active' : 'mobileMode'} onClick={() => setActiveMode(mode.id)} aria-selected={activeMode === mode.id}>
+            <span>{index + 1}</span>{mode.id}
+          </button>)}
+        </div>
+      </section>
+
       <section id="lab" className="appShell">
         <aside className="chapters">
           <input value={query} onChange={e => setQuery(e.target.value)} placeholder="Search chapter or vocabulary…" />
@@ -79,6 +122,11 @@ function App() {
             {activeMode === 'Connections' && <div className="stack">{selectedChapter.connections.map(c => <div className="connection" key={c}>{c}</div>)}<div className="mastery"><b>Mastery Map</b><p>{masteryQuestion}</p></div></div>}
             {activeMode === 'Analogy' && <div className="cards">{selectedChapter.analogies.map(a => <article className="vocab analogy" key={a}><h3>Use-case analogy</h3><p>{a}</p></article>)}</div>}
             {activeMode === 'Practice Lab' && <div className="practice"><span className="pill">{practicePrompt.type}</span><h3>{practicePrompt.prompt}</h3><button onClick={randomPrompt}>Give me another drill</button><textarea placeholder="Write your answer here. Force recall before checking notes." /></div>}
+          </div>
+
+          <div className="studyActions" aria-label="Sequential learning actions">
+            <button onClick={retreatLearning} disabled={chapterIndex === 0 && modeIndex === 0}><ChevronLeft size={16}/> Back</button>
+            <button className="primary" onClick={advanceLearning}>{modeIndex === modes.length - 1 ? 'Next chapter' : `Next: ${nextMode}`} <ChevronRight size={16}/></button>
           </div>
         </section>
       </section>

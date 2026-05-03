@@ -26,3 +26,9 @@ test('app implements Krish learning progression and core interactions', () => {
     assert.match(app, new RegExp(token));
   }
 });
+
+test('mobile UX exposes a guided study bar and sequential learning actions', () => {
+  for (const token of ['mobileStudyBar', 'mobileChapterSelect', 'mobileModes', 'studyActions', 'advanceLearning', 'retreatLearning']) {
+    assert.match(app, new RegExp(token));
+  }
+});
