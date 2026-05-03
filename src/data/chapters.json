@@ -12,7 +12,8 @@
         "intuition": "Do not think of the agent as just a model. Think of it as the whole decision system: perception, memory, action-selection, and updating. In a real system, the agent is the part that can say, \u2018Given what I know now, I will do this next.\u2019",
         "useCase": "When designing an RL problem, first draw a boundary around what gets to decide. Everything inside that boundary is the agent; everything outside becomes environment.",
         "tradingExample": "A trader or bot deciding buy, sell, hold, hedge, or reduce size based on market state and past outcomes.",
-        "agentExample": "An AI assistant deciding whether to search, ask clarification, call a tool, or answer directly."
+        "agentExample": "An AI assistant deciding whether to search, ask clarification, call a tool, or answer directly.",
+        "vocabularyNote": "Say it like a role: the chooser inside the system boundary."
       },
       {
         "term": "Environment",
@@ -21,7 +22,8 @@
         "intuition": "The environment is not just a physical place. It is the source of consequences. It contains the market, users, physics, game rules, APIs, delays, noise, and all the things the agent does not directly control.",
         "useCase": "If a behavior produces surprising consequences, you probably modeled the environment too narrowly. Expand the environment boundary until the feedback source is included.",
         "tradingExample": "The market, liquidity, volatility, news, fills, slippage, and other traders responding to orders.",
-        "agentExample": "The user, files, APIs, browser pages, tool outputs, and errors that respond to an agent\u2019s actions."
+        "agentExample": "The user, files, APIs, browser pages, tool outputs, and errors that respond to an agent\u2019s actions.",
+        "vocabularyNote": "Say it like pressure: the outside world that answers back."
       },
       {
         "term": "State",
@@ -30,7 +32,8 @@
         "intuition": "State is a compressed version of reality. A good state keeps the information that matters for the next decision and drops noise. A bad state hides critical context, making even a smart policy behave blindly.",
         "useCase": "Before choosing an algorithm, ask: what must be visible for a good decision? That answer is your state design problem.",
         "tradingExample": "Ticker, trend, volatility, position, risk budget, macro regime, support/resistance, and time to expiration.",
-        "agentExample": "Current task, user preference, conversation context, file tree, tool results, constraints, and unresolved questions."
+        "agentExample": "Current task, user preference, conversation context, file tree, tool results, constraints, and unresolved questions.",
+        "vocabularyNote": "Say it like context: the snapshot used before choosing."
       },
       {
         "term": "Action",
@@ -39,7 +42,8 @@
         "intuition": "Actions are the agent\u2019s control surface. If important choices are missing from the action set, the agent cannot learn them no matter how good the reward is. RL quality depends heavily on giving the agent the right levers.",
         "useCase": "List actions as verbs: wait, buy, sell, ask, search, summarize, retry, escalate. If it is not actionable, it is not an action.",
         "tradingExample": "Buy shares, sell calls, enter a debit spread, close a position, hold, or reduce size.",
-        "agentExample": "Read a file, run tests, browse a site, create a PR, ask a question, or produce the final answer."
+        "agentExample": "Read a file, run tests, browse a site, create a PR, ask a question, or produce the final answer.",
+        "vocabularyNote": "Say it like a lever: the move the agent can actually take."
       },
       {
         "term": "Reward",
@@ -48,7 +52,8 @@
         "intuition": "Reward is a teaching signal, not the whole goal. It is local feedback that nudges learning. If the reward is poorly designed, the agent can learn the wrong behavior very efficiently.",
         "useCase": "Reward design is objective design. Ask whether the signal encourages the behavior you actually want, not just the easy thing to measure.",
         "tradingExample": "Profit/loss after a trade step, but ideally adjusted for risk, drawdown, fees, and position sizing discipline.",
-        "agentExample": "A successful tool result, user satisfaction, fewer retries, valid output, or a penalty for unsafe/irrelevant actions."
+        "agentExample": "A successful tool result, user satisfaction, fewer retries, valid output, or a penalty for unsafe/irrelevant actions.",
+        "vocabularyNote": "Say it like feedback: the immediate score from the last move."
       },
       {
         "term": "Return",
@@ -57,7 +62,8 @@
         "intuition": "Return is why RL is deeper than chasing the next reward. A small immediate loss can protect long-term upside; a pleasant immediate reward can create future damage. Return forces long-horizon thinking.",
         "useCase": "Whenever a decision has delayed consequences, optimize for return rather than immediate reward.",
         "tradingExample": "Long-term risk-adjusted portfolio growth, not whether the next trade is green for five minutes.",
-        "agentExample": "Completing the user\u2019s real task reliably, not merely producing a fast but shallow answer."
+        "agentExample": "Completing the user\u2019s real task reliably, not merely producing a fast but shallow answer.",
+        "vocabularyNote": "Say it like compounding outcome: what the feedback adds up to."
       },
       {
         "term": "Policy",
@@ -66,7 +72,8 @@
         "intuition": "A policy is the agent\u2019s habit or playbook. It can be deterministic, stochastic, hand-written, learned, simple, or complex. When behavior changes after learning, the policy is what changed.",
         "useCase": "Write a policy in plain English first: \u2018If state looks like X, choose action Y unless risk Z is present.\u2019 Then improve it with feedback.",
         "tradingExample": "If trend is up, volatility is reasonable, and risk budget is open, enter a defined-risk bullish spread; otherwise wait.",
-        "agentExample": "If missing context is retrievable, search/read first; if ambiguity blocks action, ask; otherwise execute and verify."
+        "agentExample": "If missing context is retrievable, search/read first; if ambiguity blocks action, ask; otherwise execute and verify.",
+        "vocabularyNote": "Say it like a habit: the rule that turns situations into moves."
       },
       {
         "term": "Value Function",
@@ -75,7 +82,8 @@
         "intuition": "Value is not immediate pleasure. It is future usefulness. A state can feel bad now but have high value if it opens strong future options; another can feel good now but be a trap.",
         "useCase": "Use value thinking to rank situations, not just actions. Ask: being here, what future does this unlock?",
         "tradingExample": "A pullback to support after a strong trend may have higher value than a random green candle after a stretched move.",
-        "agentExample": "A well-structured repo with tests has high value because future changes become safer and faster."
+        "agentExample": "A well-structured repo with tests has high value because future changes become safer and faster.",
+        "vocabularyNote": "Say it like judgment: how promising this situation is for later."
       },
       {
         "term": "Model",
@@ -84,7 +92,8 @@
         "intuition": "A model lets the agent imagine before acting. It may be explicit like a simulator, implicit like a mental model, or learned from experience. Better models make planning possible, but wrong models create confident mistakes.",
         "useCase": "Use model thinking when actions are expensive: simulate, forecast, or reason through likely next states before acting.",
         "tradingExample": "A thesis about how price may react to earnings, rates, volatility, or liquidity after entering a trade.",
-        "agentExample": "Predicting that editing a dependency file requires running tests and may affect deployment."
+        "agentExample": "Predicting that editing a dependency file requires running tests and may affect deployment.",
+        "vocabularyNote": "Say it like imagination: what the agent thinks will happen next."
       },
       {
         "term": "Exploration",
@@ -93,7 +102,8 @@
         "intuition": "Exploration is disciplined curiosity. It is not random chaos; it is paying a learning cost to discover better actions. Without exploration, an agent can get stuck repeating the first thing that seemed okay.",
         "useCase": "Reserve a bounded budget for experiments. Explore enough to learn, but cap downside so learning does not destroy the system.",
         "tradingExample": "Paper-trading a new setup or using very small size before trusting it with real capital.",
-        "agentExample": "Trying a new tool/workflow on a safe small task to learn whether it improves future execution."
+        "agentExample": "Trying a new tool/workflow on a safe small task to learn whether it improves future execution.",
+        "vocabularyNote": "Say it like controlled curiosity: spend a little to learn more."
       },
       {
         "term": "Exploitation",
@@ -102,7 +112,8 @@
         "intuition": "Exploitation is disciplined execution. It converts learning into results. Too much exploitation becomes rigidity; too little means you never benefit from what you already know.",
         "useCase": "When evidence is strong and uncertainty is low, stop experimenting and execute the proven policy consistently.",
         "tradingExample": "Repeatedly trading a validated risk-defined setup under the conditions where it has edge.",
-        "agentExample": "Using the known build-test-deploy workflow instead of inventing a new process every time."
+        "agentExample": "Using the known build-test-deploy workflow instead of inventing a new process every time.",
+        "vocabularyNote": "Say it like execution: use the best-known move with discipline."
       },
       {
         "term": "Exploration\u2013Exploitation Tradeoff",
@@ -111,7 +122,8 @@
         "intuition": "This tradeoff appears whenever learning and performance happen at the same time. The agent must decide whether today is for discovery or harvesting. Mastering RL means seeing this tension everywhere.",
         "useCase": "Frame decisions as portfolio allocation: some budget for reliable execution, some for experiments, and explicit rules for when experiments graduate.",
         "tradingExample": "Allocate most capital to proven setups while reserving tiny size for testing new market patterns.",
-        "agentExample": "Use stable workflows for production tasks while experimenting with new agents/skills in low-risk sandboxes."
+        "agentExample": "Use stable workflows for production tasks while experimenting with new agents/skills in low-risk sandboxes.",
+        "vocabularyNote": "Say it like allocation: learning budget versus execution budget."
       },
       {
         "term": "Delayed Reward",
@@ -120,7 +132,8 @@
         "intuition": "Delayed reward is why RL needs credit assignment. Many important choices look neutral or costly at first but matter later. The hard question is: which earlier action deserves credit or blame?",
         "useCase": "Look for lag between action and outcome. If lag exists, immediate metrics may be misleading.",
         "tradingExample": "A hedge may lose money today but save the portfolio during a later volatility spike.",
-        "agentExample": "Writing tests slows the first edit but prevents later regressions and faster future changes."
+        "agentExample": "Writing tests slows the first edit but prevents later regressions and faster future changes.",
+        "vocabularyNote": "Say it like patience: the important consequence is not immediate."
       },
       {
         "term": "Prediction vs Control",
@@ -129,7 +142,8 @@
         "intuition": "Supervised learning often stops at prediction. RL cares about control: using predictions to act. A model that predicts churn is useful, but an RL framing asks which intervention should be taken next.",
         "useCase": "Separate dashboards from decision systems. Prediction informs; control changes the world.",
         "tradingExample": "Predicting volatility is prediction; choosing spread width and position size is control.",
-        "agentExample": "Predicting a test may fail is prediction; running the test and fixing the cause is control."
+        "agentExample": "Predicting a test may fail is prediction; running the test and fixing the cause is control.",
+        "vocabularyNote": "Say it like two jobs: forecast the world, then decide how to change it."
       },
       {
         "term": "Sequential Decision Making",
@@ -138,7 +152,8 @@
         "intuition": "RL is for chains of consequence, not isolated answers. The key is path dependence: what you do now changes what options, information, and risks exist later.",
         "useCase": "Use RL thinking when the order of decisions matters: onboarding, trading campaigns, study plans, operations, robotics, habits.",
         "tradingExample": "Entry, adjustment, hedge, hold, exit, and review form one sequence rather than independent trades.",
-        "agentExample": "Plan, inspect files, edit, test, debug, commit, deploy, and verify are sequential decisions with feedback."
+        "agentExample": "Plan, inspect files, edit, test, debug, commit, deploy, and verify are sequential decisions with feedback.",
+        "vocabularyNote": "Say it like a path: each choice shapes the next situation."
       }
     ],
     "connections": [

@@ -116,7 +116,7 @@ function App() {
 
           <div className="panel">
             <div className="panelTitle"><span>{activeMode}</span><small>{selectedChapter.vocabulary.length} vocabulary items</small></div>
-            {activeMode === 'Vocabulary' && <div className="cards">{selectedChapter.vocabulary.map(v => <article className="vocab" key={v.term}><h3>{v.term}</h3><p className="hook">{v.memoryHook || 'Practice saying this word until it feels familiar.'}</p><small>Definition comes next — first make the word easy to recognize.</small></article>)}</div>}
+            {activeMode === 'Vocabulary' && <div className="cards">{selectedChapter.vocabulary.map(v => <article className="vocab" key={v.term}><h3>{v.term}</h3><p className="hook">{v.memoryHook || 'Practice saying this word until it feels familiar.'}</p>{v.vocabularyNote && <small>{v.vocabularyNote}</small>}</article>)}</div>}
             {activeMode === 'Definition' && <div className="stack">{selectedChapter.vocabulary.map(v => <div className="line" key={v.term}><b>{v.term}</b><span>{v.definition}</span>{v.useCase && <em>{v.useCase}</em>}</div>)}</div>}
             {activeMode === 'Intuition' && <div className="cards">{selectedChapter.vocabulary.map(v => <article className="vocab" key={v.term}><h3>{v.term}</h3><p>{v.intuition}</p>{v.tradingExample && <div className="example"><b>Trading</b><span>{v.tradingExample}</span></div>}{v.agentExample && <div className="example"><b>Agentic AI</b><span>{v.agentExample}</span></div>}</article>)}</div>}
             {activeMode === 'Connections' && <div className="stack">{selectedChapter.connections.map(c => <div className="connection" key={c}>{c}</div>)}<div className="mastery"><b>Mastery Map</b><p>{masteryQuestion}</p></div></div>}

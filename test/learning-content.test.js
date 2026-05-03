@@ -51,3 +51,14 @@ test('chapter 1 has non-repetitive section-specific learning content', () => {
   assert.match(app, /tradingExample/);
   assert.match(app, /agentExample/);
 });
+
+test('vocabulary cards do not repeat a generic next-step note for every term', () => {
+  assert.doesNotMatch(app, /Definition comes next — first make the word easy to recognize/);
+  const chapter = data.find(item => item.number === 1);
+  const notes = chapter.vocabulary.map(item => item.vocabularyNote);
+  assert.equal(notes.length, chapter.vocabulary.length);
+  assert.equal(new Set(notes).size, notes.length);
+  for (const note of notes) {
+    assert.ok(note && note.length > 25);
+  }
+});
