@@ -1,0 +1,1480 @@
+[
+  {
+    "number": 1,
+    "title": "Introduction",
+    "tagline": "Chapter 1 vocabulary-to-concept practice for Introduction.",
+    "masteryQuestion": "Explain the agent-environment loop using trading, habits, and product examples.",
+    "vocabulary": [
+      {
+        "term": "Agent",
+        "definition": "Agent is a core Chapter 1 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat agent as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map agent to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Environment",
+        "definition": "Environment is a core Chapter 1 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat environment as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map environment to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "State",
+        "definition": "State is a core Chapter 1 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat state as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map state to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Action",
+        "definition": "Action is a core Chapter 1 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat action as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map action to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Reward",
+        "definition": "Reward is a core Chapter 1 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat reward as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map reward to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Return",
+        "definition": "Return is a core Chapter 1 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat return as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map return to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Policy",
+        "definition": "Policy is a core Chapter 1 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat policy as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map policy to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Value Function",
+        "definition": "Value Function is a core Chapter 1 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat value function as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map value function to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Model",
+        "definition": "Model is a core Chapter 1 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat model as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map model to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Exploration",
+        "definition": "Exploration is a core Chapter 1 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat exploration as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map exploration to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Exploitation",
+        "definition": "Exploitation is a core Chapter 1 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat exploitation as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map exploitation to a trading rule, habit loop, product experiment, or agent workflow."
+      }
+    ],
+    "connections": [
+      "Connect Agent \u2192 Environment \u2192 practical decision loop.",
+      "Contrast immediate feedback with long-term consequence in Introduction.",
+      "Name the uncertainty, the update rule, and the behavior change."
+    ],
+    "analogies": [
+      "Trading: use Chapter 1 ideas to decide buy/sell/hold with risk-first feedback.",
+      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
+      "Personal system: convert habits into policy rules and feedback into adaptation."
+    ],
+    "exercises": [
+      {
+        "type": "Vocabulary reps",
+        "prompt": "Write one-line definitions for: Agent, Environment, State, Action, Reward, Return."
+      },
+      {
+        "type": "Intuition drill",
+        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+      },
+      {
+        "type": "Connection map",
+        "prompt": "Draw arrows connecting Agent, Environment, reward/feedback, and long-term return."
+      },
+      {
+        "type": "Use-case analogy",
+        "prompt": "Create one trading, one product, and one personal-growth analogy for Introduction."
+      },
+      {
+        "type": "Mastery recall",
+        "prompt": "Explain the agent-environment loop using trading, habits, and product examples."
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "title": "Multi-armed Bandits",
+    "tagline": "Chapter 2 vocabulary-to-concept practice for Multi-armed Bandits.",
+    "masteryQuestion": "Choose between exploring a new option and exploiting the current winner.",
+    "vocabulary": [
+      {
+        "term": "k-armed bandit",
+        "definition": "k-armed bandit is a core Chapter 2 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat k-armed bandit as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map k-armed bandit to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Action value",
+        "definition": "Action value is a core Chapter 2 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat action value as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map action value to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Sample average",
+        "definition": "Sample average is a core Chapter 2 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat sample average as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map sample average to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "\u03b5-greedy",
+        "definition": "\u03b5-greedy is a core Chapter 2 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat \u03b5-greedy as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map \u03b5-greedy to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Optimistic initial values",
+        "definition": "Optimistic initial values is a core Chapter 2 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat optimistic initial values as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map optimistic initial values to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Upper Confidence Bound",
+        "definition": "Upper Confidence Bound is a core Chapter 2 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat upper confidence bound as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map upper confidence bound to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Gradient bandit",
+        "definition": "Gradient bandit is a core Chapter 2 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat gradient bandit as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map gradient bandit to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Regret",
+        "definition": "Regret is a core Chapter 2 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat regret as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map regret to a trading rule, habit loop, product experiment, or agent workflow."
+      }
+    ],
+    "connections": [
+      "Connect k-armed bandit \u2192 Action value \u2192 practical decision loop.",
+      "Contrast immediate feedback with long-term consequence in Multi-armed Bandits.",
+      "Name the uncertainty, the update rule, and the behavior change."
+    ],
+    "analogies": [
+      "Trading: use Chapter 2 ideas to decide buy/sell/hold with risk-first feedback.",
+      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
+      "Personal system: convert habits into policy rules and feedback into adaptation."
+    ],
+    "exercises": [
+      {
+        "type": "Vocabulary reps",
+        "prompt": "Write one-line definitions for: k-armed bandit, Action value, Sample average, \u03b5-greedy, Optimistic initial values, Upper Confidence Bound."
+      },
+      {
+        "type": "Intuition drill",
+        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+      },
+      {
+        "type": "Connection map",
+        "prompt": "Draw arrows connecting k-armed bandit, Action value, reward/feedback, and long-term return."
+      },
+      {
+        "type": "Use-case analogy",
+        "prompt": "Create one trading, one product, and one personal-growth analogy for Multi-armed Bandits."
+      },
+      {
+        "type": "Mastery recall",
+        "prompt": "Choose between exploring a new option and exploiting the current winner."
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "title": "Finite Markov Decision Processes",
+    "tagline": "Chapter 3 vocabulary-to-concept practice for Finite Markov Decision Processes.",
+    "masteryQuestion": "Turn a messy real-world decision into states, actions, rewards, and transitions.",
+    "vocabulary": [
+      {
+        "term": "MDP",
+        "definition": "MDP is a core Chapter 3 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat mdp as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map mdp to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Markov property",
+        "definition": "Markov property is a core Chapter 3 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat markov property as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map markov property to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Transition probability",
+        "definition": "Transition probability is a core Chapter 3 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat transition probability as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map transition probability to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Reward function",
+        "definition": "Reward function is a core Chapter 3 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat reward function as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map reward function to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Discount factor",
+        "definition": "Discount factor is a core Chapter 3 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat discount factor as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map discount factor to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Episodic task",
+        "definition": "Episodic task is a core Chapter 3 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat episodic task as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map episodic task to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Continuing task",
+        "definition": "Continuing task is a core Chapter 3 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat continuing task as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map continuing task to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Bellman equation",
+        "definition": "Bellman equation is a core Chapter 3 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat bellman equation as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map bellman equation to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Optimal value",
+        "definition": "Optimal value is a core Chapter 3 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat optimal value as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map optimal value to a trading rule, habit loop, product experiment, or agent workflow."
+      }
+    ],
+    "connections": [
+      "Connect MDP \u2192 Markov property \u2192 practical decision loop.",
+      "Contrast immediate feedback with long-term consequence in Finite Markov Decision Processes.",
+      "Name the uncertainty, the update rule, and the behavior change."
+    ],
+    "analogies": [
+      "Trading: use Chapter 3 ideas to decide buy/sell/hold with risk-first feedback.",
+      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
+      "Personal system: convert habits into policy rules and feedback into adaptation."
+    ],
+    "exercises": [
+      {
+        "type": "Vocabulary reps",
+        "prompt": "Write one-line definitions for: MDP, Markov property, Transition probability, Reward function, Discount factor, Episodic task."
+      },
+      {
+        "type": "Intuition drill",
+        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+      },
+      {
+        "type": "Connection map",
+        "prompt": "Draw arrows connecting MDP, Markov property, reward/feedback, and long-term return."
+      },
+      {
+        "type": "Use-case analogy",
+        "prompt": "Create one trading, one product, and one personal-growth analogy for Finite Markov Decision Processes."
+      },
+      {
+        "type": "Mastery recall",
+        "prompt": "Turn a messy real-world decision into states, actions, rewards, and transitions."
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "title": "Dynamic Programming",
+    "tagline": "Chapter 4 vocabulary-to-concept practice for Dynamic Programming.",
+    "masteryQuestion": "Describe how planning improves a policy when the model is known.",
+    "vocabulary": [
+      {
+        "term": "Policy evaluation",
+        "definition": "Policy evaluation is a core Chapter 4 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat policy evaluation as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map policy evaluation to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Policy improvement",
+        "definition": "Policy improvement is a core Chapter 4 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat policy improvement as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map policy improvement to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Policy iteration",
+        "definition": "Policy iteration is a core Chapter 4 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat policy iteration as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map policy iteration to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Value iteration",
+        "definition": "Value iteration is a core Chapter 4 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat value iteration as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map value iteration to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Bootstrapping",
+        "definition": "Bootstrapping is a core Chapter 4 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat bootstrapping as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map bootstrapping to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Sweep",
+        "definition": "Sweep is a core Chapter 4 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat sweep as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map sweep to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Generalized Policy Iteration",
+        "definition": "Generalized Policy Iteration is a core Chapter 4 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat generalized policy iteration as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map generalized policy iteration to a trading rule, habit loop, product experiment, or agent workflow."
+      }
+    ],
+    "connections": [
+      "Connect Policy evaluation \u2192 Policy improvement \u2192 practical decision loop.",
+      "Contrast immediate feedback with long-term consequence in Dynamic Programming.",
+      "Name the uncertainty, the update rule, and the behavior change."
+    ],
+    "analogies": [
+      "Trading: use Chapter 4 ideas to decide buy/sell/hold with risk-first feedback.",
+      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
+      "Personal system: convert habits into policy rules and feedback into adaptation."
+    ],
+    "exercises": [
+      {
+        "type": "Vocabulary reps",
+        "prompt": "Write one-line definitions for: Policy evaluation, Policy improvement, Policy iteration, Value iteration, Bootstrapping, Sweep."
+      },
+      {
+        "type": "Intuition drill",
+        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+      },
+      {
+        "type": "Connection map",
+        "prompt": "Draw arrows connecting Policy evaluation, Policy improvement, reward/feedback, and long-term return."
+      },
+      {
+        "type": "Use-case analogy",
+        "prompt": "Create one trading, one product, and one personal-growth analogy for Dynamic Programming."
+      },
+      {
+        "type": "Mastery recall",
+        "prompt": "Describe how planning improves a policy when the model is known."
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "title": "Monte Carlo Methods",
+    "tagline": "Chapter 5 vocabulary-to-concept practice for Monte Carlo Methods.",
+    "masteryQuestion": "Learn values from complete episodes without knowing the model.",
+    "vocabulary": [
+      {
+        "term": "Episode",
+        "definition": "Episode is a core Chapter 5 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat episode as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map episode to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "First-visit MC",
+        "definition": "First-visit MC is a core Chapter 5 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat first-visit mc as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map first-visit mc to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Every-visit MC",
+        "definition": "Every-visit MC is a core Chapter 5 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat every-visit mc as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map every-visit mc to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Exploring starts",
+        "definition": "Exploring starts is a core Chapter 5 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat exploring starts as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map exploring starts to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "On-policy",
+        "definition": "On-policy is a core Chapter 5 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat on-policy as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map on-policy to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Off-policy",
+        "definition": "Off-policy is a core Chapter 5 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat off-policy as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map off-policy to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Importance sampling",
+        "definition": "Importance sampling is a core Chapter 5 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat importance sampling as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map importance sampling to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Ordinary IS",
+        "definition": "Ordinary IS is a core Chapter 5 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat ordinary is as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map ordinary is to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Weighted IS",
+        "definition": "Weighted IS is a core Chapter 5 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat weighted is as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map weighted is to a trading rule, habit loop, product experiment, or agent workflow."
+      }
+    ],
+    "connections": [
+      "Connect Episode \u2192 First-visit MC \u2192 practical decision loop.",
+      "Contrast immediate feedback with long-term consequence in Monte Carlo Methods.",
+      "Name the uncertainty, the update rule, and the behavior change."
+    ],
+    "analogies": [
+      "Trading: use Chapter 5 ideas to decide buy/sell/hold with risk-first feedback.",
+      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
+      "Personal system: convert habits into policy rules and feedback into adaptation."
+    ],
+    "exercises": [
+      {
+        "type": "Vocabulary reps",
+        "prompt": "Write one-line definitions for: Episode, First-visit MC, Every-visit MC, Exploring starts, On-policy, Off-policy."
+      },
+      {
+        "type": "Intuition drill",
+        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+      },
+      {
+        "type": "Connection map",
+        "prompt": "Draw arrows connecting Episode, First-visit MC, reward/feedback, and long-term return."
+      },
+      {
+        "type": "Use-case analogy",
+        "prompt": "Create one trading, one product, and one personal-growth analogy for Monte Carlo Methods."
+      },
+      {
+        "type": "Mastery recall",
+        "prompt": "Learn values from complete episodes without knowing the model."
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "title": "Temporal-Difference Learning",
+    "tagline": "Chapter 6 vocabulary-to-concept practice for Temporal-Difference Learning.",
+    "masteryQuestion": "Update your estimate immediately after seeing the next step.",
+    "vocabulary": [
+      {
+        "term": "TD learning",
+        "definition": "TD learning is a core Chapter 6 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat td learning as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map td learning to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "TD error",
+        "definition": "TD error is a core Chapter 6 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat td error as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map td error to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "TD target",
+        "definition": "TD target is a core Chapter 6 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat td target as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map td target to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "SARSA",
+        "definition": "SARSA is a core Chapter 6 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat sarsa as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map sarsa to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Q-learning",
+        "definition": "Q-learning is a core Chapter 6 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat q-learning as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map q-learning to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Expected SARSA",
+        "definition": "Expected SARSA is a core Chapter 6 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat expected sarsa as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map expected sarsa to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Bootstrapping",
+        "definition": "Bootstrapping is a core Chapter 6 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat bootstrapping as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map bootstrapping to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Online learning",
+        "definition": "Online learning is a core Chapter 6 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat online learning as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map online learning to a trading rule, habit loop, product experiment, or agent workflow."
+      }
+    ],
+    "connections": [
+      "Connect TD learning \u2192 TD error \u2192 practical decision loop.",
+      "Contrast immediate feedback with long-term consequence in Temporal-Difference Learning.",
+      "Name the uncertainty, the update rule, and the behavior change."
+    ],
+    "analogies": [
+      "Trading: use Chapter 6 ideas to decide buy/sell/hold with risk-first feedback.",
+      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
+      "Personal system: convert habits into policy rules and feedback into adaptation."
+    ],
+    "exercises": [
+      {
+        "type": "Vocabulary reps",
+        "prompt": "Write one-line definitions for: TD learning, TD error, TD target, SARSA, Q-learning, Expected SARSA."
+      },
+      {
+        "type": "Intuition drill",
+        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+      },
+      {
+        "type": "Connection map",
+        "prompt": "Draw arrows connecting TD learning, TD error, reward/feedback, and long-term return."
+      },
+      {
+        "type": "Use-case analogy",
+        "prompt": "Create one trading, one product, and one personal-growth analogy for Temporal-Difference Learning."
+      },
+      {
+        "type": "Mastery recall",
+        "prompt": "Update your estimate immediately after seeing the next step."
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "title": "n-step Bootstrapping",
+    "tagline": "Chapter 7 vocabulary-to-concept practice for n-step Bootstrapping.",
+    "masteryQuestion": "Blend Monte Carlo patience with TD immediacy.",
+    "vocabulary": [
+      {
+        "term": "n-step return",
+        "definition": "n-step return is a core Chapter 7 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat n-step return as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map n-step return to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Forward view",
+        "definition": "Forward view is a core Chapter 7 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat forward view as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map forward view to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Backup",
+        "definition": "Backup is a core Chapter 7 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat backup as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map backup to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "\u03bb-return",
+        "definition": "\u03bb-return is a core Chapter 7 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat \u03bb-return as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map \u03bb-return to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Bias-variance tradeoff",
+        "definition": "Bias-variance tradeoff is a core Chapter 7 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat bias-variance tradeoff as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map bias-variance tradeoff to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Interim update",
+        "definition": "Interim update is a core Chapter 7 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat interim update as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map interim update to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Eligibility-like credit",
+        "definition": "Eligibility-like credit is a core Chapter 7 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat eligibility-like credit as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map eligibility-like credit to a trading rule, habit loop, product experiment, or agent workflow."
+      }
+    ],
+    "connections": [
+      "Connect n-step return \u2192 Forward view \u2192 practical decision loop.",
+      "Contrast immediate feedback with long-term consequence in n-step Bootstrapping.",
+      "Name the uncertainty, the update rule, and the behavior change."
+    ],
+    "analogies": [
+      "Trading: use Chapter 7 ideas to decide buy/sell/hold with risk-first feedback.",
+      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
+      "Personal system: convert habits into policy rules and feedback into adaptation."
+    ],
+    "exercises": [
+      {
+        "type": "Vocabulary reps",
+        "prompt": "Write one-line definitions for: n-step return, Forward view, Backup, \u03bb-return, Bias-variance tradeoff, Interim update."
+      },
+      {
+        "type": "Intuition drill",
+        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+      },
+      {
+        "type": "Connection map",
+        "prompt": "Draw arrows connecting n-step return, Forward view, reward/feedback, and long-term return."
+      },
+      {
+        "type": "Use-case analogy",
+        "prompt": "Create one trading, one product, and one personal-growth analogy for n-step Bootstrapping."
+      },
+      {
+        "type": "Mastery recall",
+        "prompt": "Blend Monte Carlo patience with TD immediacy."
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "title": "Planning and Learning with Tabular Methods",
+    "tagline": "Chapter 8 vocabulary-to-concept practice for Planning and Learning with Tabular Methods.",
+    "masteryQuestion": "Use both real experience and simulated experience to improve faster.",
+    "vocabulary": [
+      {
+        "term": "Planning",
+        "definition": "Planning is a core Chapter 8 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat planning as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map planning to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Dyna",
+        "definition": "Dyna is a core Chapter 8 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat dyna as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map dyna to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Search control",
+        "definition": "Search control is a core Chapter 8 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat search control as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map search control to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Prioritized sweeping",
+        "definition": "Prioritized sweeping is a core Chapter 8 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat prioritized sweeping as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map prioritized sweeping to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Expected update",
+        "definition": "Expected update is a core Chapter 8 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat expected update as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map expected update to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Sample update",
+        "definition": "Sample update is a core Chapter 8 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat sample update as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map sample update to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Model learning",
+        "definition": "Model learning is a core Chapter 8 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat model learning as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map model learning to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Trajectory sampling",
+        "definition": "Trajectory sampling is a core Chapter 8 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat trajectory sampling as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map trajectory sampling to a trading rule, habit loop, product experiment, or agent workflow."
+      }
+    ],
+    "connections": [
+      "Connect Planning \u2192 Dyna \u2192 practical decision loop.",
+      "Contrast immediate feedback with long-term consequence in Planning and Learning with Tabular Methods.",
+      "Name the uncertainty, the update rule, and the behavior change."
+    ],
+    "analogies": [
+      "Trading: use Chapter 8 ideas to decide buy/sell/hold with risk-first feedback.",
+      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
+      "Personal system: convert habits into policy rules and feedback into adaptation."
+    ],
+    "exercises": [
+      {
+        "type": "Vocabulary reps",
+        "prompt": "Write one-line definitions for: Planning, Dyna, Search control, Prioritized sweeping, Expected update, Sample update."
+      },
+      {
+        "type": "Intuition drill",
+        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+      },
+      {
+        "type": "Connection map",
+        "prompt": "Draw arrows connecting Planning, Dyna, reward/feedback, and long-term return."
+      },
+      {
+        "type": "Use-case analogy",
+        "prompt": "Create one trading, one product, and one personal-growth analogy for Planning and Learning with Tabular Methods."
+      },
+      {
+        "type": "Mastery recall",
+        "prompt": "Use both real experience and simulated experience to improve faster."
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "title": "On-policy Prediction with Approximation",
+    "tagline": "Chapter 9 vocabulary-to-concept practice for On-policy Prediction with Approximation.",
+    "masteryQuestion": "Estimate values when there are too many states to table up.",
+    "vocabulary": [
+      {
+        "term": "Function approximation",
+        "definition": "Function approximation is a core Chapter 9 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat function approximation as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map function approximation to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Feature vector",
+        "definition": "Feature vector is a core Chapter 9 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat feature vector as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map feature vector to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Linear value function",
+        "definition": "Linear value function is a core Chapter 9 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat linear value function as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map linear value function to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Gradient descent",
+        "definition": "Gradient descent is a core Chapter 9 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat gradient descent as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map gradient descent to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Mean squared value error",
+        "definition": "Mean squared value error is a core Chapter 9 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat mean squared value error as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map mean squared value error to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "On-policy distribution",
+        "definition": "On-policy distribution is a core Chapter 9 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat on-policy distribution as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map on-policy distribution to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Semi-gradient",
+        "definition": "Semi-gradient is a core Chapter 9 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat semi-gradient as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map semi-gradient to a trading rule, habit loop, product experiment, or agent workflow."
+      }
+    ],
+    "connections": [
+      "Connect Function approximation \u2192 Feature vector \u2192 practical decision loop.",
+      "Contrast immediate feedback with long-term consequence in On-policy Prediction with Approximation.",
+      "Name the uncertainty, the update rule, and the behavior change."
+    ],
+    "analogies": [
+      "Trading: use Chapter 9 ideas to decide buy/sell/hold with risk-first feedback.",
+      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
+      "Personal system: convert habits into policy rules and feedback into adaptation."
+    ],
+    "exercises": [
+      {
+        "type": "Vocabulary reps",
+        "prompt": "Write one-line definitions for: Function approximation, Feature vector, Linear value function, Gradient descent, Mean squared value error, On-policy distribution."
+      },
+      {
+        "type": "Intuition drill",
+        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+      },
+      {
+        "type": "Connection map",
+        "prompt": "Draw arrows connecting Function approximation, Feature vector, reward/feedback, and long-term return."
+      },
+      {
+        "type": "Use-case analogy",
+        "prompt": "Create one trading, one product, and one personal-growth analogy for On-policy Prediction with Approximation."
+      },
+      {
+        "type": "Mastery recall",
+        "prompt": "Estimate values when there are too many states to table up."
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "title": "On-policy Control with Approximation",
+    "tagline": "Chapter 10 vocabulary-to-concept practice for On-policy Control with Approximation.",
+    "masteryQuestion": "Control behavior with approximate value functions at scale.",
+    "vocabulary": [
+      {
+        "term": "Action-value approximation",
+        "definition": "Action-value approximation is a core Chapter 10 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat action-value approximation as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map action-value approximation to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Episodic semi-gradient SARSA",
+        "definition": "Episodic semi-gradient SARSA is a core Chapter 10 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat episodic semi-gradient sarsa as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map episodic semi-gradient sarsa to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Average reward",
+        "definition": "Average reward is a core Chapter 10 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat average reward as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map average reward to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Differential return",
+        "definition": "Differential return is a core Chapter 10 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat differential return as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map differential return to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Continuing control",
+        "definition": "Continuing control is a core Chapter 10 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat continuing control as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map continuing control to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Tile coding",
+        "definition": "Tile coding is a core Chapter 10 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat tile coding as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map tile coding to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Feature construction",
+        "definition": "Feature construction is a core Chapter 10 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat feature construction as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map feature construction to a trading rule, habit loop, product experiment, or agent workflow."
+      }
+    ],
+    "connections": [
+      "Connect Action-value approximation \u2192 Episodic semi-gradient SARSA \u2192 practical decision loop.",
+      "Contrast immediate feedback with long-term consequence in On-policy Control with Approximation.",
+      "Name the uncertainty, the update rule, and the behavior change."
+    ],
+    "analogies": [
+      "Trading: use Chapter 10 ideas to decide buy/sell/hold with risk-first feedback.",
+      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
+      "Personal system: convert habits into policy rules and feedback into adaptation."
+    ],
+    "exercises": [
+      {
+        "type": "Vocabulary reps",
+        "prompt": "Write one-line definitions for: Action-value approximation, Episodic semi-gradient SARSA, Average reward, Differential return, Continuing control, Tile coding."
+      },
+      {
+        "type": "Intuition drill",
+        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+      },
+      {
+        "type": "Connection map",
+        "prompt": "Draw arrows connecting Action-value approximation, Episodic semi-gradient SARSA, reward/feedback, and long-term return."
+      },
+      {
+        "type": "Use-case analogy",
+        "prompt": "Create one trading, one product, and one personal-growth analogy for On-policy Control with Approximation."
+      },
+      {
+        "type": "Mastery recall",
+        "prompt": "Control behavior with approximate value functions at scale."
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "title": "Off-policy Methods with Approximation",
+    "tagline": "Chapter 11 vocabulary-to-concept practice for Off-policy Methods with Approximation.",
+    "masteryQuestion": "Learn one policy from data generated by another without blowing up.",
+    "vocabulary": [
+      {
+        "term": "Behavior policy",
+        "definition": "Behavior policy is a core Chapter 11 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat behavior policy as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map behavior policy to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Target policy",
+        "definition": "Target policy is a core Chapter 11 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat target policy as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map target policy to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Deadly triad",
+        "definition": "Deadly triad is a core Chapter 11 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat deadly triad as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map deadly triad to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Importance sampling ratio",
+        "definition": "Importance sampling ratio is a core Chapter 11 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat importance sampling ratio as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map importance sampling ratio to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Emphatic TD",
+        "definition": "Emphatic TD is a core Chapter 11 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat emphatic td as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map emphatic td to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Projected Bellman error",
+        "definition": "Projected Bellman error is a core Chapter 11 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat projected bellman error as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map projected bellman error to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Stability",
+        "definition": "Stability is a core Chapter 11 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat stability as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map stability to a trading rule, habit loop, product experiment, or agent workflow."
+      }
+    ],
+    "connections": [
+      "Connect Behavior policy \u2192 Target policy \u2192 practical decision loop.",
+      "Contrast immediate feedback with long-term consequence in Off-policy Methods with Approximation.",
+      "Name the uncertainty, the update rule, and the behavior change."
+    ],
+    "analogies": [
+      "Trading: use Chapter 11 ideas to decide buy/sell/hold with risk-first feedback.",
+      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
+      "Personal system: convert habits into policy rules and feedback into adaptation."
+    ],
+    "exercises": [
+      {
+        "type": "Vocabulary reps",
+        "prompt": "Write one-line definitions for: Behavior policy, Target policy, Deadly triad, Importance sampling ratio, Emphatic TD, Projected Bellman error."
+      },
+      {
+        "type": "Intuition drill",
+        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+      },
+      {
+        "type": "Connection map",
+        "prompt": "Draw arrows connecting Behavior policy, Target policy, reward/feedback, and long-term return."
+      },
+      {
+        "type": "Use-case analogy",
+        "prompt": "Create one trading, one product, and one personal-growth analogy for Off-policy Methods with Approximation."
+      },
+      {
+        "type": "Mastery recall",
+        "prompt": "Learn one policy from data generated by another without blowing up."
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "title": "Eligibility Traces",
+    "tagline": "Chapter 12 vocabulary-to-concept practice for Eligibility Traces.",
+    "masteryQuestion": "Assign credit backward through recent states and actions.",
+    "vocabulary": [
+      {
+        "term": "Eligibility trace",
+        "definition": "Eligibility trace is a core Chapter 12 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat eligibility trace as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map eligibility trace to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Trace decay \u03bb",
+        "definition": "Trace decay \u03bb is a core Chapter 12 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat trace decay \u03bb as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map trace decay \u03bb to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Backward view",
+        "definition": "Backward view is a core Chapter 12 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat backward view as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map backward view to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "TD(\u03bb)",
+        "definition": "TD(\u03bb) is a core Chapter 12 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat td(\u03bb) as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map td(\u03bb) to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "SARSA(\u03bb)",
+        "definition": "SARSA(\u03bb) is a core Chapter 12 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat sarsa(\u03bb) as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map sarsa(\u03bb) to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Replacing traces",
+        "definition": "Replacing traces is a core Chapter 12 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat replacing traces as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map replacing traces to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Accumulating traces",
+        "definition": "Accumulating traces is a core Chapter 12 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat accumulating traces as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map accumulating traces to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "True online TD",
+        "definition": "True online TD is a core Chapter 12 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat true online td as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map true online td to a trading rule, habit loop, product experiment, or agent workflow."
+      }
+    ],
+    "connections": [
+      "Connect Eligibility trace \u2192 Trace decay \u03bb \u2192 practical decision loop.",
+      "Contrast immediate feedback with long-term consequence in Eligibility Traces.",
+      "Name the uncertainty, the update rule, and the behavior change."
+    ],
+    "analogies": [
+      "Trading: use Chapter 12 ideas to decide buy/sell/hold with risk-first feedback.",
+      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
+      "Personal system: convert habits into policy rules and feedback into adaptation."
+    ],
+    "exercises": [
+      {
+        "type": "Vocabulary reps",
+        "prompt": "Write one-line definitions for: Eligibility trace, Trace decay \u03bb, Backward view, TD(\u03bb), SARSA(\u03bb), Replacing traces."
+      },
+      {
+        "type": "Intuition drill",
+        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+      },
+      {
+        "type": "Connection map",
+        "prompt": "Draw arrows connecting Eligibility trace, Trace decay \u03bb, reward/feedback, and long-term return."
+      },
+      {
+        "type": "Use-case analogy",
+        "prompt": "Create one trading, one product, and one personal-growth analogy for Eligibility Traces."
+      },
+      {
+        "type": "Mastery recall",
+        "prompt": "Assign credit backward through recent states and actions."
+      }
+    ]
+  },
+  {
+    "number": 13,
+    "title": "Policy Gradient Methods",
+    "tagline": "Chapter 13 vocabulary-to-concept practice for Policy Gradient Methods.",
+    "masteryQuestion": "Improve the policy directly instead of only estimating action values.",
+    "vocabulary": [
+      {
+        "term": "Parameterized policy",
+        "definition": "Parameterized policy is a core Chapter 13 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat parameterized policy as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map parameterized policy to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Policy gradient theorem",
+        "definition": "Policy gradient theorem is a core Chapter 13 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat policy gradient theorem as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map policy gradient theorem to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "REINFORCE",
+        "definition": "REINFORCE is a core Chapter 13 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat reinforce as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map reinforce to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Baseline",
+        "definition": "Baseline is a core Chapter 13 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat baseline as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map baseline to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Actor-critic",
+        "definition": "Actor-critic is a core Chapter 13 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat actor-critic as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map actor-critic to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Softmax policy",
+        "definition": "Softmax policy is a core Chapter 13 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat softmax policy as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map softmax policy to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Gaussian policy",
+        "definition": "Gaussian policy is a core Chapter 13 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat gaussian policy as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map gaussian policy to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Compatible features",
+        "definition": "Compatible features is a core Chapter 13 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat compatible features as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map compatible features to a trading rule, habit loop, product experiment, or agent workflow."
+      }
+    ],
+    "connections": [
+      "Connect Parameterized policy \u2192 Policy gradient theorem \u2192 practical decision loop.",
+      "Contrast immediate feedback with long-term consequence in Policy Gradient Methods.",
+      "Name the uncertainty, the update rule, and the behavior change."
+    ],
+    "analogies": [
+      "Trading: use Chapter 13 ideas to decide buy/sell/hold with risk-first feedback.",
+      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
+      "Personal system: convert habits into policy rules and feedback into adaptation."
+    ],
+    "exercises": [
+      {
+        "type": "Vocabulary reps",
+        "prompt": "Write one-line definitions for: Parameterized policy, Policy gradient theorem, REINFORCE, Baseline, Actor-critic, Softmax policy."
+      },
+      {
+        "type": "Intuition drill",
+        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+      },
+      {
+        "type": "Connection map",
+        "prompt": "Draw arrows connecting Parameterized policy, Policy gradient theorem, reward/feedback, and long-term return."
+      },
+      {
+        "type": "Use-case analogy",
+        "prompt": "Create one trading, one product, and one personal-growth analogy for Policy Gradient Methods."
+      },
+      {
+        "type": "Mastery recall",
+        "prompt": "Improve the policy directly instead of only estimating action values."
+      }
+    ]
+  },
+  {
+    "number": 14,
+    "title": "Psychology",
+    "tagline": "Chapter 14 vocabulary-to-concept practice for Psychology.",
+    "masteryQuestion": "Connect RL vocabulary to human/animal learning.",
+    "vocabulary": [
+      {
+        "term": "Classical conditioning",
+        "definition": "Classical conditioning is a core Chapter 14 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat classical conditioning as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map classical conditioning to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Instrumental conditioning",
+        "definition": "Instrumental conditioning is a core Chapter 14 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat instrumental conditioning as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map instrumental conditioning to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Blocking",
+        "definition": "Blocking is a core Chapter 14 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat blocking as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map blocking to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Secondary reinforcement",
+        "definition": "Secondary reinforcement is a core Chapter 14 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat secondary reinforcement as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map secondary reinforcement to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Prediction error",
+        "definition": "Prediction error is a core Chapter 14 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat prediction error as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map prediction error to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Habit",
+        "definition": "Habit is a core Chapter 14 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat habit as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map habit to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Goal-directed behavior",
+        "definition": "Goal-directed behavior is a core Chapter 14 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat goal-directed behavior as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map goal-directed behavior to a trading rule, habit loop, product experiment, or agent workflow."
+      }
+    ],
+    "connections": [
+      "Connect Classical conditioning \u2192 Instrumental conditioning \u2192 practical decision loop.",
+      "Contrast immediate feedback with long-term consequence in Psychology.",
+      "Name the uncertainty, the update rule, and the behavior change."
+    ],
+    "analogies": [
+      "Trading: use Chapter 14 ideas to decide buy/sell/hold with risk-first feedback.",
+      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
+      "Personal system: convert habits into policy rules and feedback into adaptation."
+    ],
+    "exercises": [
+      {
+        "type": "Vocabulary reps",
+        "prompt": "Write one-line definitions for: Classical conditioning, Instrumental conditioning, Blocking, Secondary reinforcement, Prediction error, Habit."
+      },
+      {
+        "type": "Intuition drill",
+        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+      },
+      {
+        "type": "Connection map",
+        "prompt": "Draw arrows connecting Classical conditioning, Instrumental conditioning, reward/feedback, and long-term return."
+      },
+      {
+        "type": "Use-case analogy",
+        "prompt": "Create one trading, one product, and one personal-growth analogy for Psychology."
+      },
+      {
+        "type": "Mastery recall",
+        "prompt": "Connect RL vocabulary to human/animal learning."
+      }
+    ]
+  },
+  {
+    "number": 15,
+    "title": "Neuroscience",
+    "tagline": "Chapter 15 vocabulary-to-concept practice for Neuroscience.",
+    "masteryQuestion": "Connect algorithmic prediction error to biological learning signals.",
+    "vocabulary": [
+      {
+        "term": "Dopamine",
+        "definition": "Dopamine is a core Chapter 15 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat dopamine as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map dopamine to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Reward prediction error",
+        "definition": "Reward prediction error is a core Chapter 15 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat reward prediction error as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map reward prediction error to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Basal ganglia",
+        "definition": "Basal ganglia is a core Chapter 15 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat basal ganglia as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map basal ganglia to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Actor-critic brain analogy",
+        "definition": "Actor-critic brain analogy is a core Chapter 15 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat actor-critic brain analogy as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map actor-critic brain analogy to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Neural value signal",
+        "definition": "Neural value signal is a core Chapter 15 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat neural value signal as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map neural value signal to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Decision circuit",
+        "definition": "Decision circuit is a core Chapter 15 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat decision circuit as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map decision circuit to a trading rule, habit loop, product experiment, or agent workflow."
+      }
+    ],
+    "connections": [
+      "Connect Dopamine \u2192 Reward prediction error \u2192 practical decision loop.",
+      "Contrast immediate feedback with long-term consequence in Neuroscience.",
+      "Name the uncertainty, the update rule, and the behavior change."
+    ],
+    "analogies": [
+      "Trading: use Chapter 15 ideas to decide buy/sell/hold with risk-first feedback.",
+      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
+      "Personal system: convert habits into policy rules and feedback into adaptation."
+    ],
+    "exercises": [
+      {
+        "type": "Vocabulary reps",
+        "prompt": "Write one-line definitions for: Dopamine, Reward prediction error, Basal ganglia, Actor-critic brain analogy, Neural value signal, Decision circuit."
+      },
+      {
+        "type": "Intuition drill",
+        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+      },
+      {
+        "type": "Connection map",
+        "prompt": "Draw arrows connecting Dopamine, Reward prediction error, reward/feedback, and long-term return."
+      },
+      {
+        "type": "Use-case analogy",
+        "prompt": "Create one trading, one product, and one personal-growth analogy for Neuroscience."
+      },
+      {
+        "type": "Mastery recall",
+        "prompt": "Connect algorithmic prediction error to biological learning signals."
+      }
+    ]
+  },
+  {
+    "number": 16,
+    "title": "Applications and Case Studies",
+    "tagline": "Chapter 16 vocabulary-to-concept practice for Applications and Case Studies.",
+    "masteryQuestion": "Map RL patterns to practical systems and case studies.",
+    "vocabulary": [
+      {
+        "term": "TD-Gammon",
+        "definition": "TD-Gammon is a core Chapter 16 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat td-gammon as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map td-gammon to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Game playing",
+        "definition": "Game playing is a core Chapter 16 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat game playing as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map game playing to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Resource allocation",
+        "definition": "Resource allocation is a core Chapter 16 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat resource allocation as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map resource allocation to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Robotics",
+        "definition": "Robotics is a core Chapter 16 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat robotics as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map robotics to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Personalization",
+        "definition": "Personalization is a core Chapter 16 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat personalization as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map personalization to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Operations research",
+        "definition": "Operations research is a core Chapter 16 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat operations research as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map operations research to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Simulation",
+        "definition": "Simulation is a core Chapter 16 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat simulation as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map simulation to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Benchmark",
+        "definition": "Benchmark is a core Chapter 16 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat benchmark as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map benchmark to a trading rule, habit loop, product experiment, or agent workflow."
+      }
+    ],
+    "connections": [
+      "Connect TD-Gammon \u2192 Game playing \u2192 practical decision loop.",
+      "Contrast immediate feedback with long-term consequence in Applications and Case Studies.",
+      "Name the uncertainty, the update rule, and the behavior change."
+    ],
+    "analogies": [
+      "Trading: use Chapter 16 ideas to decide buy/sell/hold with risk-first feedback.",
+      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
+      "Personal system: convert habits into policy rules and feedback into adaptation."
+    ],
+    "exercises": [
+      {
+        "type": "Vocabulary reps",
+        "prompt": "Write one-line definitions for: TD-Gammon, Game playing, Resource allocation, Robotics, Personalization, Operations research."
+      },
+      {
+        "type": "Intuition drill",
+        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+      },
+      {
+        "type": "Connection map",
+        "prompt": "Draw arrows connecting TD-Gammon, Game playing, reward/feedback, and long-term return."
+      },
+      {
+        "type": "Use-case analogy",
+        "prompt": "Create one trading, one product, and one personal-growth analogy for Applications and Case Studies."
+      },
+      {
+        "type": "Mastery recall",
+        "prompt": "Map RL patterns to practical systems and case studies."
+      }
+    ]
+  },
+  {
+    "number": 17,
+    "title": "Frontiers",
+    "tagline": "Chapter 17 vocabulary-to-concept practice for Frontiers.",
+    "masteryQuestion": "Explain where RL research goes beyond tabular textbook foundations.",
+    "vocabulary": [
+      {
+        "term": "General intelligence",
+        "definition": "General intelligence is a core Chapter 17 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat general intelligence as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map general intelligence to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Hierarchical RL",
+        "definition": "Hierarchical RL is a core Chapter 17 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat hierarchical rl as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map hierarchical rl to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Options",
+        "definition": "Options is a core Chapter 17 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat options as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map options to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Intrinsic motivation",
+        "definition": "Intrinsic motivation is a core Chapter 17 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat intrinsic motivation as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map intrinsic motivation to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Continual learning",
+        "definition": "Continual learning is a core Chapter 17 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat continual learning as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map continual learning to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Representation learning",
+        "definition": "Representation learning is a core Chapter 17 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat representation learning as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map representation learning to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Safety",
+        "definition": "Safety is a core Chapter 17 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat safety as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map safety to a trading rule, habit loop, product experiment, or agent workflow."
+      },
+      {
+        "term": "Scalability",
+        "definition": "Scalability is a core Chapter 17 handle for naming the decision-learning mechanism precisely.",
+        "intuition": "Treat scalability as a mental hook: what information changes behavior, what feedback arrives, and what gets updated?",
+        "useCase": "Practical drill: map scalability to a trading rule, habit loop, product experiment, or agent workflow."
+      }
+    ],
+    "connections": [
+      "Connect General intelligence \u2192 Hierarchical RL \u2192 practical decision loop.",
+      "Contrast immediate feedback with long-term consequence in Frontiers.",
+      "Name the uncertainty, the update rule, and the behavior change."
+    ],
+    "analogies": [
+      "Trading: use Chapter 17 ideas to decide buy/sell/hold with risk-first feedback.",
+      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
+      "Personal system: convert habits into policy rules and feedback into adaptation."
+    ],
+    "exercises": [
+      {
+        "type": "Vocabulary reps",
+        "prompt": "Write one-line definitions for: General intelligence, Hierarchical RL, Options, Intrinsic motivation, Continual learning, Representation learning."
+      },
+      {
+        "type": "Intuition drill",
+        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+      },
+      {
+        "type": "Connection map",
+        "prompt": "Draw arrows connecting General intelligence, Hierarchical RL, reward/feedback, and long-term return."
+      },
+      {
+        "type": "Use-case analogy",
+        "prompt": "Create one trading, one product, and one personal-growth analogy for Frontiers."
+      },
+      {
+        "type": "Mastery recall",
+        "prompt": "Explain where RL research goes beyond tabular textbook foundations."
+      }
+    ]
+  }
+]
