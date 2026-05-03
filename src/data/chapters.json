@@ -2,106 +2,187 @@
   {
     "number": 1,
     "title": "Introduction",
-    "tagline": "Chapter 1 vocabulary-to-concept practice for Introduction.",
-    "masteryQuestion": "Explain the agent-environment loop using trading, habits, and product examples.",
+    "tagline": "Master the core RL loop before formulas: who acts, what changes, what feedback means, and why long-term return matters.",
+    "masteryQuestion": "Explain, without notes, how an agent uses state, action, reward, return, policy, value, and model to improve decisions over time.",
     "vocabulary": [
       {
         "term": "Agent",
-        "definition": "The learner or decision-maker that chooses actions from experience.",
-        "intuition": "Ask: when agent changes, does the agent observe differently, choose differently, learn differently, or value the future differently?",
-        "useCase": "Map agent to a concrete loop: trader decision, product experiment, habit rule, or autonomous agent workflow."
+        "memoryHook": "Who is learning? Who chooses?",
+        "definition": "The learner and decision-maker that selects actions and improves from feedback.",
+        "intuition": "Do not think of the agent as just a model. Think of it as the whole decision system: perception, memory, action-selection, and updating. In a real system, the agent is the part that can say, \u2018Given what I know now, I will do this next.\u2019",
+        "useCase": "When designing an RL problem, first draw a boundary around what gets to decide. Everything inside that boundary is the agent; everything outside becomes environment.",
+        "tradingExample": "A trader or bot deciding buy, sell, hold, hedge, or reduce size based on market state and past outcomes.",
+        "agentExample": "An AI assistant deciding whether to search, ask clarification, call a tool, or answer directly."
       },
       {
         "term": "Environment",
-        "definition": "The outside world that receives actions and returns observations, rewards, and consequences.",
-        "intuition": "Ask: when environment changes, does the agent observe differently, choose differently, learn differently, or value the future differently?",
-        "useCase": "Map environment to a concrete loop: trader decision, product experiment, habit rule, or autonomous agent workflow."
+        "memoryHook": "What world pushes back?",
+        "definition": "Everything outside the agent that reacts to actions and returns new situations and feedback.",
+        "intuition": "The environment is not just a physical place. It is the source of consequences. It contains the market, users, physics, game rules, APIs, delays, noise, and all the things the agent does not directly control.",
+        "useCase": "If a behavior produces surprising consequences, you probably modeled the environment too narrowly. Expand the environment boundary until the feedback source is included.",
+        "tradingExample": "The market, liquidity, volatility, news, fills, slippage, and other traders responding to orders.",
+        "agentExample": "The user, files, APIs, browser pages, tool outputs, and errors that respond to an agent\u2019s actions."
       },
       {
         "term": "State",
-        "definition": "The decision-relevant description of the current situation.",
-        "intuition": "Ask: when state changes, does the agent observe differently, choose differently, learn differently, or value the future differently?",
-        "useCase": "Map state to a concrete loop: trader decision, product experiment, habit rule, or autonomous agent workflow."
+        "memoryHook": "What situation am I in?",
+        "definition": "The information representation the agent uses to decide what to do now.",
+        "intuition": "State is a compressed version of reality. A good state keeps the information that matters for the next decision and drops noise. A bad state hides critical context, making even a smart policy behave blindly.",
+        "useCase": "Before choosing an algorithm, ask: what must be visible for a good decision? That answer is your state design problem.",
+        "tradingExample": "Ticker, trend, volatility, position, risk budget, macro regime, support/resistance, and time to expiration.",
+        "agentExample": "Current task, user preference, conversation context, file tree, tool results, constraints, and unresolved questions."
       },
       {
         "term": "Action",
-        "definition": "A choice available to the agent at a time step.",
-        "intuition": "Ask: when action changes, does the agent observe differently, choose differently, learn differently, or value the future differently?",
-        "useCase": "Map action to a concrete loop: trader decision, product experiment, habit rule, or autonomous agent workflow."
+        "memoryHook": "What can I do next?",
+        "definition": "A choice available to the agent in a given state.",
+        "intuition": "Actions are the agent\u2019s control surface. If important choices are missing from the action set, the agent cannot learn them no matter how good the reward is. RL quality depends heavily on giving the agent the right levers.",
+        "useCase": "List actions as verbs: wait, buy, sell, ask, search, summarize, retry, escalate. If it is not actionable, it is not an action.",
+        "tradingExample": "Buy shares, sell calls, enter a debit spread, close a position, hold, or reduce size.",
+        "agentExample": "Read a file, run tests, browse a site, create a PR, ask a question, or produce the final answer."
       },
       {
         "term": "Reward",
-        "definition": "The immediate scalar feedback signal after behavior.",
-        "intuition": "Ask: when reward changes, does the agent observe differently, choose differently, learn differently, or value the future differently?",
-        "useCase": "Map reward to a concrete loop: trader decision, product experiment, habit rule, or autonomous agent workflow."
+        "memoryHook": "What feedback arrived immediately?",
+        "definition": "The immediate scalar signal that says how good or bad the last transition was for the objective.",
+        "intuition": "Reward is a teaching signal, not the whole goal. It is local feedback that nudges learning. If the reward is poorly designed, the agent can learn the wrong behavior very efficiently.",
+        "useCase": "Reward design is objective design. Ask whether the signal encourages the behavior you actually want, not just the easy thing to measure.",
+        "tradingExample": "Profit/loss after a trade step, but ideally adjusted for risk, drawdown, fees, and position sizing discipline.",
+        "agentExample": "A successful tool result, user satisfaction, fewer retries, valid output, or a penalty for unsafe/irrelevant actions."
       },
       {
         "term": "Return",
-        "definition": "The accumulated future reward the agent is really trying to maximize.",
-        "intuition": "Ask: when return changes, does the agent observe differently, choose differently, learn differently, or value the future differently?",
-        "useCase": "Map return to a concrete loop: trader decision, product experiment, habit rule, or autonomous agent workflow."
+        "memoryHook": "What did this lead to over time?",
+        "definition": "The cumulative future reward the agent tries to maximize, often discounted over time.",
+        "intuition": "Return is why RL is deeper than chasing the next reward. A small immediate loss can protect long-term upside; a pleasant immediate reward can create future damage. Return forces long-horizon thinking.",
+        "useCase": "Whenever a decision has delayed consequences, optimize for return rather than immediate reward.",
+        "tradingExample": "Long-term risk-adjusted portfolio growth, not whether the next trade is green for five minutes.",
+        "agentExample": "Completing the user\u2019s real task reliably, not merely producing a fast but shallow answer."
       },
       {
         "term": "Policy",
-        "definition": "The agent\u2019s behavior rule: a mapping from situations to actions.",
-        "intuition": "Ask: when policy changes, does the agent observe differently, choose differently, learn differently, or value the future differently?",
-        "useCase": "Map policy to a concrete loop: trader decision, product experiment, habit rule, or autonomous agent workflow."
+        "memoryHook": "What is my decision rule?",
+        "definition": "The agent\u2019s behavior strategy: how it maps states to actions.",
+        "intuition": "A policy is the agent\u2019s habit or playbook. It can be deterministic, stochastic, hand-written, learned, simple, or complex. When behavior changes after learning, the policy is what changed.",
+        "useCase": "Write a policy in plain English first: \u2018If state looks like X, choose action Y unless risk Z is present.\u2019 Then improve it with feedback.",
+        "tradingExample": "If trend is up, volatility is reasonable, and risk budget is open, enter a defined-risk bullish spread; otherwise wait.",
+        "agentExample": "If missing context is retrievable, search/read first; if ambiguity blocks action, ask; otherwise execute and verify."
       },
       {
         "term": "Value Function",
-        "definition": "An estimate of long-term usefulness from a state or action.",
-        "intuition": "Ask: when value function changes, does the agent observe differently, choose differently, learn differently, or value the future differently?",
-        "useCase": "Map value function to a concrete loop: trader decision, product experiment, habit rule, or autonomous agent workflow."
+        "memoryHook": "How promising is this situation?",
+        "definition": "An estimate of expected long-term return from a state or from taking an action in a state.",
+        "intuition": "Value is not immediate pleasure. It is future usefulness. A state can feel bad now but have high value if it opens strong future options; another can feel good now but be a trap.",
+        "useCase": "Use value thinking to rank situations, not just actions. Ask: being here, what future does this unlock?",
+        "tradingExample": "A pullback to support after a strong trend may have higher value than a random green candle after a stretched move.",
+        "agentExample": "A well-structured repo with tests has high value because future changes become safer and faster."
       },
       {
         "term": "Model",
-        "definition": "An internal or learned simulator of how actions change the environment.",
-        "intuition": "Ask: when model changes, does the agent observe differently, choose differently, learn differently, or value the future differently?",
-        "useCase": "Map model to a concrete loop: trader decision, product experiment, habit rule, or autonomous agent workflow."
+        "memoryHook": "What do I think will happen if I act?",
+        "definition": "A representation of environment dynamics and rewards used to predict consequences of actions.",
+        "intuition": "A model lets the agent imagine before acting. It may be explicit like a simulator, implicit like a mental model, or learned from experience. Better models make planning possible, but wrong models create confident mistakes.",
+        "useCase": "Use model thinking when actions are expensive: simulate, forecast, or reason through likely next states before acting.",
+        "tradingExample": "A thesis about how price may react to earnings, rates, volatility, or liquidity after entering a trade.",
+        "agentExample": "Predicting that editing a dependency file requires running tests and may affect deployment."
       },
       {
         "term": "Exploration",
-        "definition": "Trying uncertain actions to learn what might work better.",
-        "intuition": "Ask: when exploration changes, does the agent observe differently, choose differently, learn differently, or value the future differently?",
-        "useCase": "Map exploration to a concrete loop: trader decision, product experiment, habit rule, or autonomous agent workflow."
+        "memoryHook": "Try to learn what I do not know.",
+        "definition": "Choosing uncertain actions to gain information that may improve future decisions.",
+        "intuition": "Exploration is disciplined curiosity. It is not random chaos; it is paying a learning cost to discover better actions. Without exploration, an agent can get stuck repeating the first thing that seemed okay.",
+        "useCase": "Reserve a bounded budget for experiments. Explore enough to learn, but cap downside so learning does not destroy the system.",
+        "tradingExample": "Paper-trading a new setup or using very small size before trusting it with real capital.",
+        "agentExample": "Trying a new tool/workflow on a safe small task to learn whether it improves future execution."
       },
       {
         "term": "Exploitation",
-        "definition": "Using the best-known action to harvest current knowledge.",
-        "intuition": "Ask: when exploitation changes, does the agent observe differently, choose differently, learn differently, or value the future differently?",
-        "useCase": "Map exploitation to a concrete loop: trader decision, product experiment, habit rule, or autonomous agent workflow."
+        "memoryHook": "Use what already works.",
+        "definition": "Choosing the best-known action based on current knowledge to obtain reward.",
+        "intuition": "Exploitation is disciplined execution. It converts learning into results. Too much exploitation becomes rigidity; too little means you never benefit from what you already know.",
+        "useCase": "When evidence is strong and uncertainty is low, stop experimenting and execute the proven policy consistently.",
+        "tradingExample": "Repeatedly trading a validated risk-defined setup under the conditions where it has edge.",
+        "agentExample": "Using the known build-test-deploy workflow instead of inventing a new process every time."
+      },
+      {
+        "term": "Exploration\u2013Exploitation Tradeoff",
+        "memoryHook": "Learn new vs use known.",
+        "definition": "The central tension between gathering information and taking the currently best-known action.",
+        "intuition": "This tradeoff appears whenever learning and performance happen at the same time. The agent must decide whether today is for discovery or harvesting. Mastering RL means seeing this tension everywhere.",
+        "useCase": "Frame decisions as portfolio allocation: some budget for reliable execution, some for experiments, and explicit rules for when experiments graduate.",
+        "tradingExample": "Allocate most capital to proven setups while reserving tiny size for testing new market patterns.",
+        "agentExample": "Use stable workflows for production tasks while experimenting with new agents/skills in low-risk sandboxes."
+      },
+      {
+        "term": "Delayed Reward",
+        "memoryHook": "The consequence arrives later.",
+        "definition": "Feedback from an action may appear many steps after the action that caused it.",
+        "intuition": "Delayed reward is why RL needs credit assignment. Many important choices look neutral or costly at first but matter later. The hard question is: which earlier action deserves credit or blame?",
+        "useCase": "Look for lag between action and outcome. If lag exists, immediate metrics may be misleading.",
+        "tradingExample": "A hedge may lose money today but save the portfolio during a later volatility spike.",
+        "agentExample": "Writing tests slows the first edit but prevents later regressions and faster future changes."
+      },
+      {
+        "term": "Prediction vs Control",
+        "memoryHook": "What will happen vs what should I do?",
+        "definition": "Prediction estimates outcomes; control chooses actions to improve outcomes.",
+        "intuition": "Supervised learning often stops at prediction. RL cares about control: using predictions to act. A model that predicts churn is useful, but an RL framing asks which intervention should be taken next.",
+        "useCase": "Separate dashboards from decision systems. Prediction informs; control changes the world.",
+        "tradingExample": "Predicting volatility is prediction; choosing spread width and position size is control.",
+        "agentExample": "Predicting a test may fail is prediction; running the test and fixing the cause is control."
+      },
+      {
+        "term": "Sequential Decision Making",
+        "memoryHook": "Today\u2019s choice changes tomorrow\u2019s state.",
+        "definition": "A problem where actions unfold over time and each choice affects future situations and rewards.",
+        "intuition": "RL is for chains of consequence, not isolated answers. The key is path dependence: what you do now changes what options, information, and risks exist later.",
+        "useCase": "Use RL thinking when the order of decisions matters: onboarding, trading campaigns, study plans, operations, robotics, habits.",
+        "tradingExample": "Entry, adjustment, hedge, hold, exit, and review form one sequence rather than independent trades.",
+        "agentExample": "Plan, inspect files, edit, test, debug, commit, deploy, and verify are sequential decisions with feedback."
       }
     ],
     "connections": [
-      "Connect Agent \u2192 Environment \u2192 practical decision loop.",
-      "Contrast immediate feedback with long-term consequence in Introduction.",
-      "Name the uncertainty, the update rule, and the behavior change."
+      "Agent + Environment create the loop: the agent acts, the environment responds, and experience is produced.",
+      "State \u2192 Action \u2192 Reward \u2192 Next State is the smallest RL sentence; practice seeing it in every real workflow.",
+      "Reward is not the same as Return: reward is the immediate teaching signal, return is the long-term objective.",
+      "Policy uses State to choose Action; Value judges whether a State or Action is promising for future Return.",
+      "Model-based thinking predicts next states before acting; model-free learning improves directly from lived experience.",
+      "Exploration discovers better policies; exploitation converts the current best policy into results."
     ],
     "analogies": [
-      "Trading: use Chapter 1 ideas to decide buy/sell/hold with risk-first feedback.",
-      "Product: treat feature experiments as actions and retention/revenue as delayed return.",
-      "Personal system: convert habits into policy rules and feedback into adaptation."
+      "Trading: agent = trader/bot, environment = market, state = setup/risk context, action = trade/hold/hedge, reward = risk-adjusted P&L, return = long-term portfolio growth.",
+      "Product: agent = product team, environment = users/market, state = current funnel metrics, action = experiment, reward = activation/retention signal, return = durable customer value.",
+      "Fitness: agent = you, state = energy/schedule/recovery, action = workout/rest/nutrition, reward = immediate feeling, return = long-term health and strength.",
+      "Agentic AI: agent = assistant workflow, environment = user/tools/files/APIs, state = task context, action = tool call or answer, reward = verified progress, return = solved user outcome."
     ],
     "exercises": [
       {
         "type": "Vocabulary reps",
-        "prompt": "Write one-line definitions for: Agent, Environment, State, Action, Reward, Return."
+        "prompt": "Say only the terms first, without definitions: Agent, Environment, State, Action, Reward, Return, Policy, Value Function, Model. Then point to each term in one real system."
+      },
+      {
+        "type": "Definition compression",
+        "prompt": "Define Agent, Environment, State, Action, Reward, and Return in one sentence each. No textbook language; use your own systems-builder words."
       },
       {
         "type": "Intuition drill",
-        "prompt": "For each term, answer: what changes, what is observed, and what gets updated?"
+        "prompt": "For a trading bot, identify what is inside the agent, what belongs to the environment, what the state contains, and what counts as action vs reward."
       },
       {
         "type": "Connection map",
-        "prompt": "Draw arrows connecting Agent, Environment, reward/feedback, and long-term return."
+        "prompt": "Draw the loop: State \u2192 Action \u2192 Reward \u2192 Next State \u2192 Policy update. Add Return above the loop as the long-term target."
       },
       {
-        "type": "Use-case analogy",
-        "prompt": "Create one trading, one product, and one personal-growth analogy for Introduction."
+        "type": "Contrast drill",
+        "prompt": "Explain the difference between Reward and Return using junk food vs health, quick P&L vs portfolio growth, and fast answer vs verified task completion."
+      },
+      {
+        "type": "Analogy builder",
+        "prompt": "Create one full RL mapping for your life/fitness system and one for an agentic AI coding assistant."
       },
       {
         "type": "Mastery recall",
-        "prompt": "Explain the agent-environment loop using trading, habits, and product examples."
+        "prompt": "Explain Chapter 1 as: RL is learning a policy for sequential decisions through feedback, under uncertainty, to maximize long-term return."
       }
     ]
   },

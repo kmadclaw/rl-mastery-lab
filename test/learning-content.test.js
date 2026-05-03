@@ -32,3 +32,22 @@ test('mobile UX exposes a guided study bar and sequential learning actions', () 
     assert.match(app, new RegExp(token));
   }
 });
+
+test('chapter 1 has non-repetitive section-specific learning content', () => {
+  const chapter = data.find(item => item.number === 1);
+  assert.equal(chapter.tagline, 'Master the core RL loop before formulas: who acts, what changes, what feedback means, and why long-term return matters.');
+  assert.ok(chapter.vocabulary.length >= 14);
+  for (const vocab of chapter.vocabulary) {
+    assert.ok(vocab.memoryHook, `${vocab.term} needs a vocabulary memory hook`);
+    assert.ok(vocab.intuition.length > 90, `${vocab.term} needs richer intuition`);
+    assert.ok(vocab.tradingExample, `${vocab.term} needs a trading example`);
+    assert.ok(vocab.agentExample, `${vocab.term} needs an agentic AI example`);
+    assert.doesNotMatch(vocab.intuition, /^Ask: when/i);
+    assert.doesNotMatch(vocab.useCase, /^Map .* to a concrete loop/i);
+  }
+  assert.ok(chapter.connections.some(item => item.includes('Reward is not the same as Return')));
+  assert.ok(chapter.analogies.some(item => item.includes('Fitness')));
+  assert.match(app, /memoryHook/);
+  assert.match(app, /tradingExample/);
+  assert.match(app, /agentExample/);
+});
